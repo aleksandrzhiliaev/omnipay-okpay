@@ -1,0 +1,36 @@
+{
+    "name": "aleksandrzhiliaev/omnipay-okpay",
+    "type": "library",
+    "description": "Okpay gateway for Omnipay payment processing library",
+    "keywords": [
+        "gateway",
+        "merchant",
+        "omnipay",
+        "pay",
+        "payment",
+        "okpay",
+        "purchase"
+    ],
+    "homepage": "http://sassoft.ru",
+    "license": "",
+    "authors": [
+        {
+            "name": "Aleksandr Zhiliaev",
+            "email": "sassoftinc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": { "Omnipay\\Okpay\\" : "src/" }
+    },
+    "require": {
+        "omnipay/common": "~2.0"
+    },
+    "require-dev": {
+        "omnipay/tests": "~2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        }
+    }
+}
