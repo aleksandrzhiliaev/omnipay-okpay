@@ -8,36 +8,6 @@ class RefundRequest extends AbstractRequest
 {
     protected $endpoint = 'https://api.okpay.com/OkPayAPI?wsdl';
 
-    public function getAccount()
-    {
-        return $this->getParameter('account');
-    }
-
-    public function setAccount($value)
-    {
-        return $this->setParameter('account', $value);
-    }
-
-    public function getSecret()
-    {
-        return $this->getParameter('secret');
-    }
-
-    public function setSecret($value)
-    {
-        return $this->setParameter('secret', $value);
-    }
-
-    public function getPayeeAccount()
-    {
-        return $this->getParameter('payeeAccount');
-    }
-
-    public function setPayeeAccount($value)
-    {
-        return $this->setParameter('payeeAccount', $value);
-    }
-
     public function getData()
     {
         $this->validate('account', 'payeeAccount', 'amount', 'secret', 'description');
