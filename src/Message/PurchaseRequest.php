@@ -5,30 +5,6 @@ namespace Omnipay\Okpay\Message;
 
 class PurchaseRequest extends AbstractRequest
 {
-    public function getAccount()
-    {
-        return $this->getParameter('account');
-    }
-
-    public function setAccount($value)
-    {
-        return $this->setParameter('account', $value);
-    }
-
-    public function getAccountName()
-    {
-        return $this->getParameter('accountName');
-    }
-
-    public function setAccountName($value)
-    {
-        return $this->setParameter('accountName', $value);
-    }
-
-    public function getEndpoint()
-    {
-        return $this->getTestMode() ? $this->testEndpoint : $this->liveEndpoint;
-    }
 
     public function getData()
     {
